@@ -1,23 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import ChildClassComp from './components/ChildClassComp';
+import ChildFuncComp from './components/ChildFuncComp';
+import EventDemo from './components/EventDemo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChildClassComp companyName="Rikkei Academy" className="Java-11">Quý Mão</ChildClassComp>
+      <ChildClassComp companyName="RikkeiSoft" className="Java-10">2023</ChildClassComp>
+      <ChildFuncComp className="Java-11">Lập trình viên</ChildFuncComp>
+      <EventDemo />
     </div>
   );
 }
